@@ -1,0 +1,41 @@
+
+
+
+
+
+
+# Created at 2024-03-15T10:21:55.809
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00000000571a2f20, pid=24516, tid=0x0000000000001ab0'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Created at 2024-03-15T10:21:55.876
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[error occurred during error reporting , id 0xc0000005]'.
+
+
+
+# Created at 2024-03-15T10:21:55.877
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '# If you would like to submit a bug report, please visit:'.
+
+
+
+
+

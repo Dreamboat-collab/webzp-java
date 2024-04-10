@@ -1,0 +1,25 @@
+# Created at 2024-03-28T10:18:09.317
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2024-03-28T10:18:11.246
+Unexpected IOException with stream: 2024-03-28 10:18:11.245  INFO 17732 --- [           main] c.codeyuaiiao.WebzpJavaApplicationTests  : Started WebzpJavaApplicationTests in 5.49 seconds (JVM running for 6.832)
+
+
+# Created at 2024-03-28T10:18:11.291
+Unexpected IOException: 5,1,com.codeyuaiiao.WebzpJavaApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2024-03-28T10:18:11.642
+Unexpected IOException: 6,1,com.codeyuaiiao.WebzpJavaApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2024-03-28T10:18:11.647
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.codeyuaiiao.WebzpJavaApplicationTests,null,null,null
+
+

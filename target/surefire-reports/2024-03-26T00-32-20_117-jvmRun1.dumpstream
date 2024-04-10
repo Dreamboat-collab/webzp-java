@@ -1,0 +1,165 @@
+# Created at 2024-03-26T00:32:20.738
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2024-03-26T00:32:21.308
+Unexpected IOException with stream: 00:32:21.307 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.codeyuaiiao.WebzpJavaApplicationTests]: using defaults.
+
+
+# Created at 2024-03-26T00:32:21.310
+Unexpected IOException with stream: 00:32:21.309 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+
+
+# Created at 2024-03-26T00:32:21.343
+Unexpected IOException with stream: 00:32:21.343 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@247310d0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1033576a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@303cf2ba, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@76494737, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4a003cbe, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4082ba93, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17fc391b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2b30a42c, org.springframework.test.context.event.EventPublishingTestExecutionListener@609e8838, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@359df09a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@43df23d3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d60fe40, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@792b749c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@23e84203, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@19932c16]
+
+
+# Created at 2024-03-26T00:32:21.352
+Unexpected IOException with stream: 00:32:21.351 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@304bb45b testClass = WebzpJavaApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@723ca036 testClass = WebzpJavaApplicationTests, locations = '{}', classes = '{class com.codeyuaiiao.WebzpJavaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b9a4292, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6379eb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3a93b025, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@49ec71f8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1a482e36, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@77cd7a0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+
+# Created at 2024-03-26T00:32:21.425
+Unexpected IOException with stream: 00:32:21.424 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+
+# Created at 2024-03-26T00:32:21.788
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-26T00:32:21.788
+Unexpected IOException with stream:   .   ____          _            __ _ _
+
+
+# Created at 2024-03-26T00:32:21.789
+Unexpected IOException with stream:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+
+# Created at 2024-03-26T00:32:21.790
+Unexpected IOException with stream: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+
+# Created at 2024-03-26T00:32:21.791
+Unexpected IOException with stream:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+
+# Created at 2024-03-26T00:32:21.791
+Unexpected IOException with stream:   '  |____| .__|_| |_|_| |_\__, | / / / /
+
+
+# Created at 2024-03-26T00:32:21.793
+Unexpected IOException with stream:  =========|_|==============|___/=/_/_/_/
+
+
+# Created at 2024-03-26T00:32:21.795
+Unexpected IOException with stream:  :: Spring Boot ::                (v2.4.2)
+
+
+# Created at 2024-03-26T00:32:21.795
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-26T00:32:21.855
+Unexpected IOException with stream: 2024-03-26 00:32:21.854  INFO 4440 --- [           main] c.codeyuaiiao.WebzpJavaApplicationTests  : Starting WebzpJavaApplicationTests using Java 1.8.0_301 on LAPTOP-US51LRGF with PID 4440 (started by 86198 in E:\011鍓嶅悗绔垎绂荤殑鏍″洯鎷涜仒绯荤粺\椤圭洰浠ｇ爜\鍚庣\webzp-java)
+
+
+# Created at 2024-03-26T00:32:21.857
+Unexpected IOException with stream: 2024-03-26 00:32:21.857  INFO 4440 --- [           main] c.codeyuaiiao.WebzpJavaApplicationTests  : No active profile set, falling back to default profiles: default
+
+
+# Created at 2024-03-26T00:32:22.503
+Unexpected IOException with stream: 2024-03-26 00:32:22.502  INFO 4440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+
+
+# Created at 2024-03-26T00:32:22.506
+Unexpected IOException with stream: 2024-03-26 00:32:22.505  INFO 4440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+
+
+# Created at 2024-03-26T00:32:22.532
+Unexpected IOException with stream: 2024-03-26 00:32:22.532  INFO 4440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+
+
+# Created at 2024-03-26T00:32:22.648
+Unexpected IOException with stream: 2024-03-26 00:32:22.647  WARN 4440 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'tbResumeEnterpriseMapper' and 'com.codeyuaiiao.mapper.TbResumeEnterpriseMapper' mapperInterface. Bean already defined with the same name!
+
+
+# Created at 2024-03-26T00:32:23.064
+Unexpected IOException with stream: Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+
+
+# Created at 2024-03-26T00:32:23.111
+Unexpected IOException with stream: 2024-03-26 00:32:23.110  INFO 4440 --- [           main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+
+
+# Created at 2024-03-26T00:32:23.378
+Unexpected IOException with stream: 2024-03-26 00:32:23.377  INFO 4440 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+
+
+# Created at 2024-03-26T00:32:23.669
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbAdminMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.716
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbEnterpriseMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.751
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbInterviewMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.799
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbRecruitmentMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.862
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbResumeEnterpriseMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.908
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbResumeMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.957
+Unexpected IOException with stream: Parsed mapper file: 'file [E:\011前后端分离的校园招聘系统\项目代码\后端\webzp-java\target\classes\mapper\TbUserMapper.xml]'
+
+
+# Created at 2024-03-26T00:32:23.966
+Unexpected IOException with stream:  _ _   |_  _ _|_. ___ _ |    _ 
+
+
+# Created at 2024-03-26T00:32:23.967
+Unexpected IOException with stream: | | |\/|_)(_| | |_\  |_)||_|_\ 
+
+
+# Created at 2024-03-26T00:32:23.968
+Unexpected IOException with stream:      /               |         
+
+
+# Created at 2024-03-26T00:32:23.970
+Unexpected IOException with stream:                         3.2.0 
+
+
+# Created at 2024-03-26T00:32:25.027
+Unexpected IOException with stream: 2024-03-26 00:32:25.026  INFO 4440 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2024-03-26T00:32:26.298
+Unexpected IOException with stream: 2024-03-26 00:32:26.298  INFO 4440 --- [           main] c.codeyuaiiao.WebzpJavaApplicationTests  : Started WebzpJavaApplicationTests in 4.859 seconds (JVM running for 5.945)
+
+
+# Created at 2024-03-26T00:32:26.329
+Unexpected IOException: 5,1,com.codeyuaiiao.WebzpJavaApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2024-03-26T00:32:26.530
+Unexpected IOException: 6,1,com.codeyuaiiao.WebzpJavaApplicationTests,contextLoads,null,null,null
+
+
+# Created at 2024-03-26T00:32:26.534
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.codeyuaiiao.WebzpJavaApplicationTests,null,null,null
+
+
