@@ -70,6 +70,9 @@ public class TbResume extends Model<TbResume> {
     @TableField("valid_time")
     private String validTime;
 
+    @ApiModelProperty(value = "简历照片")
+    @TableField("image")
+    private String image;
 
     @Override
     protected Serializable pkVal() {

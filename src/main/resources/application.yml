@@ -23,5 +23,3 @@ logging:
   level:
     com.baomidou.mybatisplus.mapper: DEBUG
 
-#first
-

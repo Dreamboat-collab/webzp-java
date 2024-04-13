@@ -32,6 +32,8 @@ public class TbResumeController {
     private TbResumeEnterpriseService tbResumeEnterpriseService;
     @Autowired
     private TbInterviewService tbInterviewService;
+    @Autowired
+    private TbUserService tbUserService;
 
 
 
@@ -69,10 +71,18 @@ public class TbResumeController {
         }
     }
 
+    //新建一份简历
     @PostMapping("/register")
     public RestResult register(HttpServletRequest request) {
         TbResume resume = new TbResume();
-        resume.setUsername(request.getParameter("username"));
+        //求职者姓名，需要转化为用户名
+        String name = request.getParameter("username");
+        QueryWrapper<TbUser> wrapper1 = new QueryWrapper<>();
+        wrapper1.eq("name", name);
+        String username = tbUserService.getOne(wrapper1).getUsername();
+        System.out.println(username);
+
+        resume.setUsername(username);
         resume.setIndustry(request.getParameter("industry"));
         resume.setWorkExperience(request.getParameter("workExperience"));
         resume.setAddress(request.getParameter("address"));
@@ -80,8 +90,7 @@ public class TbResumeController {
         resume.setIntentionJob(request.getParameter("intentionJob"));
         resume.setJobStatus(request.getParameter("JobStatus"));
         resume.setPersonalIntroduction(request.getParameter("personalIntroduction"));
-        resume.setValidTime(request.getParameter("validTime"));
-        String username = resume.getUsername();
+        //此处逻辑：用户只能创建一个简历
         QueryWrapper<TbResume> wrapper = new QueryWrapper<>();
         wrapper.eq("username", username);
         List<TbResume> list = tbResumeService.list(wrapper);
@@ -111,7 +120,7 @@ public class TbResumeController {
         }
     }
 
-    //得到一条用户数据
+    //求职者查看简历信息
     @PostMapping("/getOneInfo")
     public RestResult getUserOneInfo(HttpServletRequest request) {
         String username = request.getParameter("username");
@@ -125,7 +134,7 @@ public class TbResumeController {
         }
     }
 
-    //更新一条用户数据
+    //求职者更新一条简历
     @PutMapping("/editOneInfo")
     public RestResult editUserOneInfo(TbResume resume){
         boolean update = tbResumeService.updateById(resume);
@@ -190,7 +199,7 @@ public class TbResumeController {
         return generator.getSuccessResult(resume_result);
     }
 
-    //获取简历信息表
+    //企业获取简历信息表
     public List<TbResume> search_resume(Integer enterprise_id){
         System.out.println(enterprise_id);
         //查询企业关联的简历信息
