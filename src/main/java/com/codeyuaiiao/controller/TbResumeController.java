@@ -76,13 +76,13 @@ public class TbResumeController {
     public RestResult register(HttpServletRequest request) {
         TbResume resume = new TbResume();
         //求职者姓名，需要转化为用户名
-        String name = request.getParameter("username");
+        String name = request.getParameter("name");
         QueryWrapper<TbUser> wrapper1 = new QueryWrapper<>();
         wrapper1.eq("name", name);
         String username = tbUserService.getOne(wrapper1).getUsername();
         System.out.println(username);
-
         resume.setUsername(username);
+        resume.setName(name);
         resume.setIndustry(request.getParameter("industry"));
         resume.setWorkExperience(request.getParameter("workExperience"));
         resume.setAddress(request.getParameter("address"));
@@ -90,13 +90,7 @@ public class TbResumeController {
         resume.setIntentionJob(request.getParameter("intentionJob"));
         resume.setJobStatus(request.getParameter("JobStatus"));
         resume.setPersonalIntroduction(request.getParameter("personalIntroduction"));
-        //此处逻辑：用户只能创建一个简历
-        QueryWrapper<TbResume> wrapper = new QueryWrapper<>();
-        wrapper.eq("username", username);
-        List<TbResume> list = tbResumeService.list(wrapper);
-        if (!list.isEmpty()) {
-            return generator.getFailResult("用户名重复,请重新输入");
-        }
+        resume.setImage(request.getParameter("image"));
         boolean save = tbResumeService.save(resume);
         if (save) {
             return generator.getSuccessResult("注册成功");

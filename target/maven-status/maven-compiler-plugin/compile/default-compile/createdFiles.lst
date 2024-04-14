@@ -27,6 +27,7 @@ com\codeyuaiiao\entity\TbRecruitment.class
 com\codeyuaiiao\service\impl\TbUserServiceImpl.class
 com\codeyuaiiao\utils\CodeGenerator$2.class
 com\codeyuaiiao\config\CorsConfig.class
+com\codeyuaiiao\controller\UploadController.class
 com\codeyuaiiao\service\TbResumeEnterpriseService.class
 com\codeyuaiiao\utils\ImageUtil.class
 com\codeyuaiiao\service\impl\TbEnterpriseServiceImpl.class
@@ -45,6 +46,7 @@ com\codeyuaiiao\mapper\TbInterviewMapper.class
 com\codeyuaiiao\service\impl\TbRecruitmentServiceImpl.class
 com\codeyuaiiao\mapper\TbEnterpriseMapper.class
 com\codeyuaiiao\service\TbUserService.class
+com\codeyuaiiao\utils\AliOSSUtils.class
 com\codeyuaiiao\config\ResultCode.class
 com\codeyuaiiao\config\InterceptorConfig.class
 com\codeyuaiiao\mapper\TbResumeMapper.class

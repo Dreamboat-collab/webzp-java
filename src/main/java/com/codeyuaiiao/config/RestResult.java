@@ -1,10 +1,11 @@
 package com.codeyuaiiao.config;
 
-import java.util.Map;
+import org.springframework.stereotype.Component;
 
 /**
  *返回结果类统一封装
  */
+@Component
 public class RestResult {
     //状态码
     private int code;

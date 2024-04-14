@@ -30,7 +30,7 @@ public class TbResume extends Model<TbResume> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @ApiModelProperty(value = "求职者姓名")
+    @ApiModelProperty(value = "求职者用户名")
     @TableField("username")
     private String username;
 
@@ -73,6 +73,10 @@ public class TbResume extends Model<TbResume> {
     @ApiModelProperty(value = "简历照片")
     @TableField("image")
     private String image;
+
+    @ApiModelProperty(value = "求职者姓名")
+    @TableField("name")
+    private String name;
 
     @Override
     protected Serializable pkVal() {
