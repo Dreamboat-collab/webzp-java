@@ -39,6 +39,8 @@ public class TbResumeEnterprise extends Model<TbResumeEnterprise>  {
     @TableField("job")
     private String job;
 
+
+
     //实体类的主键值
     @Override
     protected Serializable pkVal() {

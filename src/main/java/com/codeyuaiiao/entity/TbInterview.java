@@ -46,6 +46,9 @@ public class TbInterview extends Model<TbInterview> {
     @TableField(value = "result")
     private String result;
 
+    @ApiModelProperty(value = "求职者姓名")
+    @TableField("name")
+    private String name;
 
     @Override
     protected Serializable pkVal() {

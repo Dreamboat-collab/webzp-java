@@ -120,9 +120,9 @@ public class TbResumeController {
         String username = request.getParameter("username");
         QueryWrapper<TbResume> wrapper = new QueryWrapper<>();
         wrapper.eq("username", username);
-        TbResume one = tbResumeService.getOne(wrapper);
-        if (one != null) {
-            return generator.getSuccessResult(one);
+        List<TbResume> list = tbResumeService.list(wrapper);
+        if (list != null) {
+            return generator.getSuccessResult(list);
         } else {
             return generator.getFailResult("没有数据");
         }
@@ -162,13 +162,17 @@ public class TbResumeController {
         String username = request.getParameter("username");
         String companyName = request.getParameter("companyName");
         String jobName = request.getParameter("jobName");
+        String intentionJob=request.getParameter("intentionJob");
         System.out.println(username);
         System.out.println(companyName);
         System.out.println(jobName);
+        System.out.println(intentionJob);
+
         //wrapper是构建查询结果的对象,此时是以TbResume实体类来构建查询
-        //获取简历id
+        //获取简历id,可能有多个简历
         QueryWrapper<TbResume> wrapper = new QueryWrapper<>();
-        wrapper.likeRight("username",username);
+        wrapper.likeRight("username", username) // 针对用户名进行匹配
+                .likeRight("intention_job", intentionJob); // 针对职位意向进行匹配
         TbResume resume = tbResumeService.getOne(wrapper);
         Integer resume_id = resume.getId();
 
@@ -228,13 +232,15 @@ public class TbResumeController {
     //发起面试邀约
     @PostMapping("/Interview")
     public RestResult interview(HttpServletRequest request){
-        //求职者用户名
-        String username = request.getParameter("username");
-        System.out.println(username);
+        //求职者名称以及求职者意向职位
+        String name = request.getParameter("name");
+        System.out.println(name);
+        String intentionJob = request.getParameter("intentionJob");
         //获取求职者id
         QueryWrapper<TbResume> wrapper1 = new QueryWrapper<>();
-        wrapper1.eq("username",username);
+        wrapper1.eq("name",name).eq("intention_job",intentionJob);
         Integer userid = tbResumeService.getOne(wrapper1).getId();
+        String username = tbResumeService.getOne(wrapper1).getUsername();
         //企业用户名
         String enterusername = request.getParameter("enterusername");
         System.out.println(enterusername);
@@ -254,6 +260,7 @@ public class TbResumeController {
         String enterusername1 = tbEnterpriseService.getOne(wrapper4).getName();
         //将数据插入到面试数据表
         TbInterview tbInterview = new TbInterview();
+        tbInterview.setName(name);
         tbInterview.setUserName(username);
         tbInterview.setEnterprisesName(enterusername1);
         tbInterview.setJob(jobName);
